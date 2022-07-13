@@ -22,15 +22,15 @@
       "required": true
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
     },
     "slug": {
       "type": "uid",
@@ -40,6 +40,16 @@
     "price": {
       "type": "float",
       "required": true
+    },
+    "media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
